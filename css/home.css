@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5em;
+  gap: 50px;
+  transition: background-color 1s;
+}
+
+.home p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: #3631a9;
+}
+
+.home button {
+  padding: 2em 4em;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #5623B1;
+  color: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.not-active {
+  display: none;
+}
+
+.dark-theme {
+  color: white;
+  background-color: black;
+}

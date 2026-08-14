@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/tracker.css" />
+    <link rel="stylesheet" href="css/overview.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>Waki Finance Tracker</title>
+  </head>
+  <body>
+    <!-- top bar -->
+    <nav class="nav">
+      <div>
+        <img src="images/logo.png" alt="" />
+        <p>Waki Finance Tracker</p>
+      </div>
+      <button class="theme-toggle">Dark Theme</button>
+    </nav>
+    <!-- side-bar bar -->
+    <div class="side-bar-main-container">
+      <div class="side-bar">
+        <button class="home-btn">
+          <img src="images/home.png" alt="" />
+        </button>
+        <button class="tracker-btn">
+          <img src="images/tracker.png" alt="" />
+        </button>
+
+        <button class="search-btn">
+          <img src="images/search.png" alt="" />
+        </button>
+        <button class="overview-btn">
+          <img src="images/preview.png" alt="" />
+        </button>
+      </div>
+      <!-- transaction input and display -->
+      <div class="home not-active">
+        <p>Welcome to Waki's Finance tracker</p>
+        <button class="start-btn">Get Started</button>
+      </div>
+      <div class="tracker">
+        <div class="money-display">
+          <div>
+            <p>Income</p>
+            <p class="incomeDisplay">0</p>
+          </div>
+          <div>
+            <p>Summary</p>
+            <p class="summaryDisplay">0</p>
+          </div>
+          <div>
+            <p>Expense</p>
+            <p class="expenseDisplay">0</p>
+          </div>
+        </div>
+        <div class="transaction-section">
+          <div class="transaction-display">
+            <p class="title">Recent Transactions</p>
+            <div class="trans-display"></div>
+          </div>
+          <div class="transaction-input-section">
+            <p class="title">Input Transactions</p>
+            <div class="button-section">
+              <button class="incomeBtn">Income</button>
+              <button class="expenseBtn">Expense</button>
+            </div>
+            <input placeholder="enter amount" type="text" class="transaction-input"/>
+            <p class="errorMess"></p>
+            <button class="ok-btn">OK</button>
+          </div>
+        </div>
+      </div>
+      <div class="overview not-active">
+        <div class="expense">
+          <p class="title">Expense</p>
+          <div class="display">
+            <p class="transaction-list-expense">Expense $2</p>
+            <p class="transaction-list-expense">Expense $2</p>
+            <p class="transaction-list-expense">Expense $2</p>
+          </div>
+        </div>
+        <div class="summary">
+          <p class="title">Summary</p>
+          <div class="display">
+            <p class="transaction-list-income">Income $2</p>
+            <p class="transaction-list-expense">Expense $2</p>
+          </div>
+        </div>
+        <div class="income">
+          <p class="title">Income</p>
+          <div class="display">
+            <p class="transaction-list-income">Income $2</p>
+            <p class="transaction-list-income">Income $2</p>
+            <p class="transaction-list-income">Income $2</p>
+          </div>
+        </div>
+      </div>
+      <div class="search not-active">
+        <input placeholder="search" type="text" />
+        <div class="search-out-put">
+          <p class="transaction-list-income">Income $2</p>
+          <p class="transaction-list-income">Income $2</p>
+          <p class="transaction-list-income">Income $2</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/tracker.js"></script>
+  </body>
+</html>
